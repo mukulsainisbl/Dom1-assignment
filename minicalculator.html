@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="first number" placeholder="enter first num">
+    <input type="text" id="second number" placeholder="enter second num">
+    <h1 id="DISPLAY">answer</h1>
+    <br>
+    <button onclick="add()">Add</button>
+    <button onclick="sub()">Subtract</button>
+    <button onclick="mul()">Multiply</button>
+    <button onclick="div()">Divide</button>
+</body>
+</html>
+<script>
+    let first = document.getElementById("first number")
+    let second = document.getElementById("second number")
+    let display = document.getElementById("DISPLAY")
+    // console.log(first.value,second.value)
+    function add(){
+        let adding = +first.value + +second.value
+        display.textContent =  adding
+    }
+
+    function sub(){
+        let sub = first.value - second.value
+        display.textContent = sub
+    }
+    function mul(){
+        let mul = first.value * second.value
+        display.textContent = mul
+    }
+    function div(){
+        let div = first.value /  second.value
+        display.textContent =  div
+    }
+
+</script>
